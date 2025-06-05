@@ -1,3 +1,4 @@
+/* Estilos para el encabezado */
 header {
     display: flex;
     color: rgb(0, 128, 0);
@@ -6,18 +7,18 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
+/* Estilos para el cuerpo de la página */
 body {
     background-image: url(../img/xbox-one-logo-3asj79wuniuhnsya.jpg);
     background-position: center;
     background-size: cover;
 }
-
+/* Elimina márgenes y padding del contenido principal */
 main {
     padding: 0;
     margin: 0;
 }
-
+/* Estilos para todos los <h2> */
 h2 {
     display: flex;
     justify-content: center;
@@ -29,12 +30,12 @@ h2 {
     width: 160px;
     height: auto;
 }
-
+/* Estilos para el contenedor de navegación */
 nav {
     display: flex;
     padding: 10px;
 }
-
+/* Estilos para la lista de navegación */
 ul {
     justify-content: space-between;
     display: contents;
@@ -47,26 +48,26 @@ a {
     text-decoration: none;
     margin-left: 100px;
 }
-
+/* Estilos generales para todas las imágenes */
 img {
     height: 500px;
     width: 400px;
     border-radius: 5%;
 }
 
-
+/* Contenedor para el primer grupo de juegos */
 .juego1 {
     display: flex;
     justify-content: space-around;
 }
-
+/* Contenedor para el segundo grupo de juegos */
 .juego2 {
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
 }
 
-
+/* Estilos para el pie de página */
 footer{
     justify-items: center;
     font-size: large;
