@@ -1,33 +1,40 @@
+*{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
 /* Estilos para el encabezado */
 header {
     display: flex;
     color: rgb(0, 128, 0);
     height: 50px;
-    padding: 25px;
+    padding: 45px;
     justify-content: space-between;
     align-items: center;
 }
 /* Estilos para el cuerpo de la página */
 body {
+    font-family: Arial, Helvetica, sans-serif; 
     background-image: url(../img/xbox-one-logo-3asj79wuniuhnsya.jpg);
     background-position: center;
     background-size: cover;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
 }
-/* Elimina márgenes y padding del contenido principal */
-main {
-    padding: 0;
-    margin: 0;
-}
+
 /* Estilos para todos los <h2> */
 h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 128, 0);;
+    color: rgb(0, 128, 0);
+    font-size: 60px;
 }
 
 .logo img {
-    width: 160px;
+    width: 250px;
     height: auto;
 }
 /* Estilos para el contenedor de navegación */
@@ -39,40 +46,55 @@ nav {
 ul {
     justify-content: space-between;
     display: contents;
-    font-size: 25px;
+    font-size: 40px;
     list-style: none;
 }
 
 
 a {
     text-decoration: none;
-    margin-left: 100px;
+    margin-left: 10px;
 }
 /* Estilos generales para todas las imágenes */
 img {
-    height: 500px;
-    width: 400px;
+    height: 35rem;
+    width: 30rem;
     border-radius: 5%;
+    padding: 0 auto;
 }
 
+
 /* Contenedor para el primer grupo de juegos */
-.juego1 {
-    display: flex;
-    justify-content: space-around;
-}
-/* Contenedor para el segundo grupo de juegos */
-.juego2 {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 10%;
+.juego {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
 }
 
 /* Estilos para el pie de página */
 footer{
     justify-items: center;
-    font-size: large;
+    font-size: 40px;
     margin: 0;
     padding: 0;
     color: rgb(0, 128, 0);
     background-color: black;
+}
+
+/* Para pantallas menores o iguales a 768px */
+@media (max-width:768px) {
+    .juego {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2vw;
+    }
+}
+
+/* Para pantallas menores o iguales a 480px */
+@media (max-width: 480px) {
+    .juego {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2vw;
+    }
 }
